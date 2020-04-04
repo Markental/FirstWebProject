@@ -25,8 +25,21 @@ namespace FirstWebProject
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            app.UseMvcWithDefaultRoute();
+
+            app.UseMvcWithDefaultRoute(); //Home
+
+            //app.UseMvc(routes => // Messages
+            //{
+            //    routes.MapRoute(
+            //        name: "calculator",
+            //        template: "Calculator/{action}/{number:int}",
+            //        defaults: new { Controller = "Calculator" });
+
+            //    routes.MapRoute(
+            //        name: "messages",
+            //        template: "say/{*message}",
+            //        defaults: new { controller = "Messages", action = "ShowMessage" });
+            //});
         }
     }
 }

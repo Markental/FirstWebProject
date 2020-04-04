@@ -26,10 +26,16 @@
                     <a class="nav-link" href="/">Main</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sign In</a>
+                    @Html.ActionLink("Message", "ShowMessage", "Messages", new { message = "This message is not empty." }, new { @class = "nav-link" })
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sign Up</a>
+                    @Html.ActionLink("10+5", "Sum", "Calculator", new { firstNumber = 10, secondNumber = 5 }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("10+23", "Sum", "Calculator", new { firstNumber = 10, secondNumber = 23 }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("50/10", "Divide", "Calculator", new { firstNumber = 50, secondNumber = 10 }, new { @class = "nav-link" })
                 </li>
             </ul>
 
